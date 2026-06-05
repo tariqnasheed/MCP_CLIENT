@@ -19,6 +19,8 @@ A Python client that connects an MCP (Model Context Protocol) server to a local 
    - If the prompt contains file‑related keywords, the tools are sent to Ollama; otherwise they are omitted.  
    - If Ollama responds with a tool call, the client executes it via the MCP server and feeds the result back to the model.  
    - The final natural‑language answer is displayed.
+   
+   Defination: MCP is the standardized communication rulebook that connects the LLM's decision, through the Python script, to the MCP Server which actually performs the task.
 
 ## Prerequisites
 

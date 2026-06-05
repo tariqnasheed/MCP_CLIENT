@@ -114,7 +114,6 @@ async def main():
     ollama_host = config.get("ollama_host", "http://localhost:11434")
 
     # Create a synchronous Ollama client. We will call it inside a separate thread
-    # using asyncio.to_thread() to avoid blocking the MCP event loop.
     ollama_sync = OllamaClient(host=ollama_host)
 
     # Build the MCP server parameters that tell the SDK how to start the server process.
